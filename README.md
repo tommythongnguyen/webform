@@ -24,10 +24,10 @@ PHONE:248-840-4552</h3><br />
 4.ENJOY<br /><br /><br />
 
 II.<h1>What i used for this project</h1><br />
-1. ANGULARJS
-2. BOOTSTRAP
-3. NODEJS
-4. NODEEMAILER
+1. ANGULARJS<br />
+2. BOOTSTRAP<br />
+3. NODEJS<br />
+4. NODEEMAILER<br />
 5. HTML AND CSS
 
 
