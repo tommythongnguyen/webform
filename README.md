@@ -1,4 +1,4 @@
-<H1>Webform with angularjs , nodejs and nodemailer serivce</H1><br /><br />
+<h1>Webform with angularjs , nodejs and nodemailer serivce</h1><br /><br />
 
 <h3>WEBFORM DEMONSTRATION<br />
 AUTHOR: TOMMY THONG NGUYEN<br />
@@ -30,6 +30,6 @@ II.<h1>What i used for this project</h1><br />
 4. NODEEMAILER<br />
 5. HTML AND CSS
 
-![alt tag](http://image/server.png)
+![ScreenShot](https://raw.githubusercontent.com/tommythongnguyen/webform/master/image/server.png)
 
 
