@@ -30,6 +30,6 @@ II.<h1>What i used for this project</h1><br />
 4. NODEEMAILER<br />
 5. HTML AND CSS
 
-![ScreenShot](server.png)
+![ScreenShot](https://raw.githubusercontent.com/tommythongnguyen/webform/master/image/server.png)
 
 
