@@ -1,9 +1,9 @@
 # webform
-Webform with angularjs , nodejs and nodemailer serivce
+<H1>Webform with angularjs , nodejs and nodemailer serivce</H1><br /><br />
 
-WEBFORM DEMONSTRATION<br />
+<h3>WEBFORM DEMONSTRATION<br />
 AUTHOR: TOMMY THONG NGUYEN<br />
-PHONE:248-840-4552<br />
+PHONE:248-840-4552</h3><br />
 
 1. Install Nodejs (if your machine does not have it):<br />
     +Go to : http://nodejs.org/download/     and download and install it.<br />
