@@ -22,6 +22,13 @@ PHONE:248-840-4552<br />
                                                     Message sent successfully" <br />
 
     +Go to your email that you enter on Server.js line 58. You would see the new email "webformservice@gmail.com"<br /><br />
-4.ENJOY
-    
+4.ENJOY<br /><br /><br />
+
+II.<h1>What i used for this project</h1><br />
+1. ANGULARJS
+2. BOOTSTRAP
+3. NODEJS
+4. NODEEMAILER
+5. HTML AND CSS
+
 
