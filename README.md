@@ -30,6 +30,6 @@ II.<h1>What i used for this project</h1><br />
 4. NODEEMAILER<br />
 5. HTML AND CSS
 
-![alt tag](http://image/server.png)
+![alt tag](https://github.com/tommythongnguyen/webform/image/server.png)
 
 
