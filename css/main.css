@@ -1,0 +1,22 @@
+.alert{
+    padding: 6px;
+    margin-bottom: 20px;
+    border: 1px 1px 0px 1px solid transparent;
+    border-radius: 4px;
+}
+.has-feedback-left .form-control-feedback {
+    left: 0; 
+}
+.has-feedback .form-control{
+    padding-left:27px;
+}
+form div.date{
+    width:100%;
+}
+#myDateStyle{
+    border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+.centered-text {
+    text-align:center
+}

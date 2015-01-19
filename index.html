@@ -1,0 +1,166 @@
+<!doctype html>
+<html data-ng-app="webform">
+    <head>
+        <title>Tommy WebForm</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/main.css"  rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="Row">
+                <div class="col-sm-8 col-sm-offset-2 h3 text-primary centered-text ">Tommy Thong Nguyen's WebForm</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">    
+                    <div id="webformPanel" class="panel" data-ng-controller="WebFormController">
+                        <form name="form" novalidate ng-submit="postUser(user)" >
+                            <div class="well">
+
+                                <!--FirstName-->
+                                <div class="form-group has-feedback has-feedback-left">
+                                    <label for="firstname" class="control-label">Firstname:</label>  
+
+                                    <input name="firstname"
+                                           type="text" 
+                                           required 
+                                           ng-model="user.firstname"
+                                           autofocus 
+                                           placeholder="first name"
+                                           class="form-control"/>
+                                    <i class="glyphicon glyphicon-user form-control-feedback"></i>
+                                    <div class="alert alert-danger" 
+                                         ng-if="(!isSubmitted) && form.firstname.$dirty && form.firstname.$error.required">
+                                       Please enter your first name
+                                    </div>
+                                </div>
+
+                                <!--LastName-->
+                                <div class="form-group has-feedback has-feedback-left">
+                                    <label for="lastname" class="control-label">Lastname:</label>
+                                    <input name="lastname"
+                                           type="text"
+                                           required 
+                                           ng-model="user.lastname"
+                                           placeholder="last name" 
+                                           class="form-control"/>
+                                    <i class="glyphicon glyphicon-user form-control-feedback"></i>
+                                    <div class="alert alert-danger"
+                                         ng-if="(!isSubmitted) && form.lastname.$dirty && form.lastname.$error.required">
+                                        Please enter your last name
+                                    </div>
+                                </div>
+
+                                <!--Phone Number-->
+                                <div class="form-group has-feedback has-feedback-left">
+                                    <label for="phone" class="control-label">Phone:</label>
+
+                                    <input name="phone"
+                                           type="text"
+                                           ng-required="requireTel"
+                                           ng-model="user.phone" 
+                                           ng-pattern="phoneNumberRegex"
+                                           placeholder="123 456 789"
+                                           class="form-control" /> 
+                                    <i class="glyphicon glyphicon-phone form-control-feedback"></i>
+                                    <div ng-if="(!isSubmitted) && form.phone.$dirty">
+                                            <div ng-if="form.phone.$error.required" 
+                                                 class="alert alert-danger"> You did not enter your phone number
+                                            </div>
+                                            <div ng-if="form.phone.$error.pattern" 
+                                                 class="alert alert-danger"> Enter only 10 digits for phone number
+                                            </div>
+                                    </div>   
+                                </div>
+
+                                <!-- Email: -->
+                                <div class="form-group has-feedback has-feedback-left">
+                                    <label for="email" class="control-label">email:</label>
+
+                                    <input name="email" 
+                                           type="email"
+                                           required ng-model="user.email" 
+                                           placeholder="user@email.com" 
+                                           class="form-control"/>
+                                    <i class="glyphicon glyphicon-envelope form-control-feedback"></i>
+                                    <div ng-if="(!isSubmitted) && form.email.$dirty">
+                                        <div ng-show="form.email.$error.required"
+                                             class="alert alert-danger">You did not enter your email
+                                        </div>
+                                        <div ng-show="form.email.$error.email"
+                                             class="alert alert-danger">Invalid
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Birthday-->
+                                <div class="form-group has-feedback has-feedback-left">
+                                    <label for="birthday" class="control-label">Birthday:</label>
+                                    <div class="input-group date">
+
+                                        <input name="birthday"
+                                               type="date" 
+                                               required
+                                               ng-model="user.birthday"
+                                               class="form-control" id="myDateStyle"/>
+                                        <i class="glyphicon glyphicon-calendar form-control-feedback"></i>
+
+                                    </div>
+                                </div>
+
+                                <!--Gender-->
+                                <div class="form-group">
+                                    <label for="gender" class="control-label">Gender:</label>
+
+                                    <select name="gender"
+                                            required 
+                                            ng-model="user.gender"
+                                            class="form-control">
+
+                                        <option value="">Select Gender</option>
+                                        <option value="female">Female</option>
+                                        <option value="male">Male</option>
+                                    </select>
+
+                                    <div class="alert alert-danger" 
+                                         ng-if="(!isSubmitted) && form.gender.$dirty && form.gender.$error.required">
+                                       Please select your gender
+                                    </div>
+                                </div>
+
+
+                                <!--Location-->
+                                <div class="form-group">
+                                    <label for="location" class="control-label">location:</label>
+
+                                    <select name="location"
+                                            required
+                                            data-ng-model="user.location"
+                                            data-ng-options="location.value as location.label for location in locations"
+                                            class="form-control">
+
+                                        <option value="" data-ng-if="!user.location">Select Location</option>
+                                    </select>  
+                                </div>
+
+                               <!--Submit Button-->
+                                <div class="submit">
+                                    <button name="lastname"
+                                           type="submit" 
+                                           ng-disabled="form.$invalid ||isSubmitted" 
+                                           class="btn btn-primary btn-block">
+                                           <span class=" glyphicon glyphicon-send pull-left"></span> SEND
+                                    </button>
+                                </div>
+                            </div>
+                        </form><!--form-->
+                    </div>
+                </div> 
+            </div>
+        </div>
+       
+        <script  src="lib/angular.min.js"></script>
+        <script  src="lib/angular-messages.js"></script>
+        <script src="js/main.js"></script>
+        
+    </body>
+</html>
