@@ -1,4 +1,4 @@
-<H1>Webform with angularjs , nodejs and nodemailer serivce</H1><br /><br />
+<h1>Webform with angularjs , nodejs and nodemailer serivce</h1><br /><br />
 
 <h3>WEBFORM DEMONSTRATION<br />
 AUTHOR: TOMMY THONG NGUYEN<br />
