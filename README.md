@@ -1,14 +1,14 @@
 # webform
 Webform with angularjs , nodejs and nodemailer serivce
 
-WEBFORM DEMONSTRATION
-AUTHOR: TOMMY THONG NGUYEN
-PHONE:248-840-4552
+WEBFORM DEMONSTRATION<br />
+AUTHOR: TOMMY THONG NGUYEN<br />
+PHONE:248-840-4552<br />
 
-1. Install Nodejs (if your machine does not have it):
-+Go to : http://nodejs.org/download/     and download and install it.
-+Test nodejs:  on your termimal: Type: node -v   
-+ Move into www folder:  cd webform/www
+1. Install Nodejs (if your machine does not have it):<br />
+    +Go to : http://nodejs.org/download/     and download and install it.<br />
+    +Test nodejs:  on your termimal: Type: node -v       <br />
++ Move into www folder:  cd webform/www   <br />
 and type:    node install      : this will install all modules need for webform.
 Finally type: node server.js    : this will run the node server at port 3000.
 
